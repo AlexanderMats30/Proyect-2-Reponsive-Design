@@ -35,7 +35,7 @@ body{
 }
 
 .wrap{
-    width: 1200px;
+    width: 1250px;
     margin: 0px auto;
 }
 
@@ -125,7 +125,7 @@ body{
 
 /* Banner */
 #banner{
-    width: 95.6%;
+    width: 95.5%;
     height: 100px;
     border: 10px solid white;
     box-shadow: 0px 0px 2px gray;
@@ -146,4 +146,21 @@ body{
     letter-spacing: 2px;
     margin-left: 320px;
     margin-top: 24px;
+}
+
+.card{
+    float: left;
+    width: 205px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    overflow: hidden;
+    background-color: white;
+    cursor: pointer;
+    margin: 22px;
+    margin-top: 40px;
+}
+
+.card:last-child{
+    margin-right: 0px;
 }
