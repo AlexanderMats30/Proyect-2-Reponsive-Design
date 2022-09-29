@@ -25,6 +25,101 @@
 }
 
 /*General*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("../img/pattern.png");
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0px auto;
+}
+
 .gear{
     font-family: "WebSymbolsRegular";
 }
+
+/* Header */
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-family: "BebasNeue";
+}
+
+#logo{
+    float: left;
+    width: 200px;
+    background-color: #37bcf9;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    margin-top: 8px;
+}
+
+#logo .gear{
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px;
+}
+
+#logo h3{
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 65px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+#navbar{
+    float: right;
+    margin-right: 15%;
+    background-color: transparent;
+}
+
+#navbar ul li{
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+#navbar ul li a:hover{
+    color:#37bcf9;
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+}
+
