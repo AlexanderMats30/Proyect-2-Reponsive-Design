@@ -310,6 +310,15 @@ body{
     cursor: pointer;
     margin: 22px;
     margin-top: 40px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.card:hover{
+    background-color: black;
 }
 
 .card:last-child{
@@ -324,6 +333,37 @@ body{
     line-height: 110px;
     text-align: center;
     margin: 0px auto;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.card:hover .icon{
+    font-size: 70px;
+    color: #37bcf9;
+    animation-name: showIcon;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+    animation-iteration-count: unset;
+}
+
+@keyframes showIcon {
+    from{
+        transform: translateY(-200%);
+        -webkit-transform: translateY(-200%);
+        -moz-transform: translateY(-200%);
+        -ms-transform: translateY(-200%);
+        -o-transform: translateY(-200%);
+    }
+    to{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
 }
 
 .card .category{
@@ -334,6 +374,38 @@ body{
     font-weight: bold;
     text-align: center;
     color: #00538c;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.card:hover .category{
+    color: white;
+    animation-name: showCategory;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-iteration-count: unset;
+}
+
+@keyframes showCategory {
+    from{
+        transform: translateY(-300%);
+        -webkit-transform: translateY(-300%);
+        -moz-transform: translateY(-300%);
+        -ms-transform: translateY(-300%);
+        -o-transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        color: white;
+}
 }
 
 .card .description{
@@ -341,6 +413,38 @@ body{
     color: #0074c1;
     font-family: "TrebuchetMS";
     font-size: 15px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.card:hover .description{
+    color: white;
+    animation-name: showDescription;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-iteration-count: unset;
+}
+
+@keyframes showDescription {
+    from{
+        transform: translateX(-300%);
+        -webkit-transform: translateX(-300%);
+        -moz-transform: translateX(-300%);
+        -ms-transform: translateX(-300%);
+        -o-transform: translateX(-300%);
+        color: black;
+    }
+    to{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        color: white;
+    }
 }
 
 /*Aside*/
@@ -351,8 +455,6 @@ body{
     float: right;
     margin: 20px;
 }
-
-
 
 #aside h3{
     display: block;
@@ -372,7 +474,6 @@ body{
     margin-top: 30px;
     margin-bottom: 15px;
 }
-
 
 #aside h3:first-child{
     margin-top: 0px;
@@ -543,6 +644,42 @@ body{
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.social .overplay{
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background-color: #f4f7f3;
+    position: absolute;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -52px;
+    transform: translateX(-80%);
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    opacity: 0;
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+}
+
+.social div:hover .overplay{
+    opacity: 1;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
 }
 
 /*Article*/
