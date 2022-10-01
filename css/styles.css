@@ -225,8 +225,21 @@ body{
     background-image: url("../img/bakbaner.png");
     background-position: -200px -200px;
     margin: 20px auto;
+    overflow: hidden;
+    animation-name: backBanner;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: unset;
 }
 
+@keyframes backBanner {
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -200px -200px;
+    }
+}
 
 #banner h1{
     display: block;
@@ -239,6 +252,50 @@ body{
     letter-spacing: 2px;
     margin-left: 320px;
     margin-top: 24px;
+    animation-name: showText;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: unset;
+}
+
+@keyframes showText {
+    0%{
+        opacity: 1;
+        transform: translateX(-600%) scale(5,5);
+        -webkit-transform: translateX(-600%) scale(5,5);
+        -moz-transform: translateX(-600%) scale(5,5);
+        -ms-transform: translateX(-600%) scale(5,5);
+        -o-transform: translateX(-600%) scale(5,5);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(600%) scale(5,5);
+        -webkit-transform: translateX(600%) scale(5,5);
+        -moz-transform: translateX(600%) scale(5,5);
+        -ms-transform: translateX(600%) scale(5,5);
+        -o-transform: translateX(600%) scale(5,5);
+    }
+    75%{
+        opacity: 0;
+        text-shadow: none;
+        color: transparent;
+        transform: translateX(-600%) scale(5,5);
+        -webkit-transform: translateX(-600%) scale(5,5);
+        -moz-transform: translateX(-600%) scale(5,5);
+        -ms-transform: translateX(-600%) scale(5,5);
+        -o-transform: translateX(-600%) scale(5,5);
+    }
+    100%{
+        opacity: 1;
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        transform: translateX(0%) scale(1,1);
+        -webkit-transform: translateX(0%) scale(1,1);
+        -moz-transform: translateX(0%) scale(1,1);
+        -ms-transform: translateX(0%) scale(1,1);
+        -o-transform: translateX(0%) scale(1,1);
+    }
+    
 }
 
 /*Cards*/
