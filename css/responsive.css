@@ -9,6 +9,7 @@
         font-size: 35px;
         margin: 33px auto;
         text-align: center;
+        width: 50%;
     }
 
     .card{
@@ -39,9 +40,12 @@
         font-size: 30px;
     }
 
+    #footer img {
+        width: 100%;
+    }
     #footer #browsers img{
         width: 14%;
-    }
+    }   
 }
 
 @media (max-width:1196px) {
@@ -136,15 +140,49 @@
 
 
 @media (max-width:862px) {
+    .card {
+        margin: 12px;
+    }
+
     #navbar{
-        margin-right: 12%;
+        margin-right: 10%;
     }
 
     #articles{
         width: 54%;
     }
 
+    #aside{
+        width: 38%;
+    }
+
+    .login input[type="submit"], 
+    .login input[type="button"], 
+    .login input[type="reset"], 
+    .login button {
+        width: 88px;
+    }
+
+    #aside input[type="submit"],
+    #aside input[type="button"] {
+        font-size: 14px;
+    }
+
     #footer > .wrap > div{
         width: 21%;
+    }
+
+    #footer h5 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:815px){
+    #banner h1{
+        font-size: 30px;
+    }
+
+    #navbar{
+        margin-right: 8%;
     }
 }
