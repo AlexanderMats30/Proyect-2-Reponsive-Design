@@ -8,7 +8,9 @@
     #banner h1{
         font-size: 35px;
         margin: 33px auto;
+        text-align: center;
     }
+
     .card{
         width: 190px;
         margin: 13px;
@@ -39,5 +41,110 @@
 
     #footer #browsers img{
         width: 14%;
+    }
+}
+
+@media (max-width:1196px) {
+
+    .card{
+        width: 17%;
+        margin: 15px;
+    }
+
+    .card .category{
+        font-size: 17px;
+    }
+
+    .card .description{
+        font-size: 14px;
+    }
+
+    #footer > .wrap > div{
+        width: 24.5%;
+    }
+}
+
+
+
+@media (max-width:1074px) {
+    .card {
+        width: 16%;
+        margin: 18px;
+        height: 280px;
+    }
+
+    .card .category{
+        font-size: 16px;
+    }
+
+    .card .description{
+        font-size: 13px;
+    }
+
+    #articles{
+        width: 62%;
+    }
+
+    #articles article h4{
+        font-size: 20px;
+    }
+
+    #articles article p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1006px){
+    #footer > .wrap > div{
+        width: 23%;
+    }
+}
+
+@media (max-width:994px) {
+    #articles{
+        width: 60%;
+    }
+
+    .card{
+        margin: 15px;
+    }
+}
+
+@media (max-width:940px) {
+    .card {
+        margin: 17px;
+    }
+
+    #articles{
+        width: 58%;
+    }
+}
+
+@media (max-width:905px) {
+    .card {
+        margin: 16px;
+    }
+
+    #articles{
+        width: 56%;
+    }
+
+    #articles article{
+        width: 95%;
+    }
+}
+
+
+@media (max-width:862px) {
+    #navbar{
+        margin-right: 12%;
+    }
+
+    #articles{
+        width: 54%;
+    }
+
+    #footer > .wrap > div{
+        width: 21%;
     }
 }
