@@ -41,7 +41,7 @@
     }
 
     #footer img {
-        width: 100%;
+        max-width: 100%;
     }
     #footer #browsers img{
         width: 14%;
@@ -179,10 +179,25 @@
 
 @media (max-width:815px){
     #banner h1{
-        font-size: 30px;
+        font-size: 29px;
     }
 
     #navbar{
-        margin-right: 8%;
+        margin-right: 7%;
+    }
+}
+
+@media (max-width:799px){
+    .card{
+        height: auto;
+    }
+
+    .card .category{
+        font-size: 15px;
+        margin-top: -20px;
+    }
+
+    .card .description{
+        display: none;
     }
 }
